@@ -22,7 +22,7 @@ RANCHER_ACCESS_KEY
 RANCHER_SECRET_KEY
 RANCHER_URL   # must include path to the "environment" (project), you get this on the api page for the env
 RANCHER_STACK_NAME  # stack name of the service you want to deploy
-
+```
 
 ```bash
 deploy-to-rancher.py --service-name foobar --docker-image 'nhumrich/foobar' --docker-tag sometag
