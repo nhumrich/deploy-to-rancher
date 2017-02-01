@@ -36,5 +36,9 @@ DOCKER_IMAGE_NAME  # the base name of the docker image you want to deploy, can b
 
 ## using on wercker
 If you are using this on wercker, the service name is assumed from the environment variable `WERCKER_APPLICATION_NAME` which wercker provides. So if your service is the same as your repository name, you get that for free.
-I also recommend pushing your docker container with the tag as the git SHA `$WERCKER_GIT_COMMIT`, then you can use `--docker-tag "$WERCKER_GIT_COMMIT"`.  You can also add a new pipeline for deploying, and simply use the container `nhumrich/deploy-to-rancher` and everything should work. 
+I also recommend pushing your docker container with the tag as the git SHA `$WERCKER_GIT_COMMIT`, then you can use `--docker-tag "$WERCKER_GIT_COMMIT"`.
+
+## using the docker container
+You can use the docker container to run this script in a prebuild environment. use the `nhumrich/deploy-to-rancher` container, and run the script from the `/scripts` directory. `/scripts/deploy-to-rancher.py ...`
+ 
 
