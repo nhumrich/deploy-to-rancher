@@ -32,6 +32,7 @@ Alternate environment variables:
 
 ```
 DOCKER_IMAGE_NAME  # the base name of the docker image you want to deploy, can be used instead of --docker-image
+```
 
 
 ## using on wercker
